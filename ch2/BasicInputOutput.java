@@ -26,16 +26,17 @@ class BasicInputOutput {
        System.out.print("What's the customer's last name? ");
        String lastName = in.next();
        String name = firstName + " " + lastName;
+       // Retrieves an integer from the user
        System.out.print("What's the customer number? ");
        String id = in.next();
-
+           
 
 
        // Concatenate and escape a new line at the end
        String customer = "Customer: " + name + " - ID: " + id;
        System.out.println(customer);
 
-
+    
 
 
        // Compute total
