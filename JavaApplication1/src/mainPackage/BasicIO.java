@@ -1,7 +1,20 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mainPackage;
+
 // Import the scanner package
 import java.util.Scanner;
 
-class BasicInputOutput {
+class BasicIO {
+    
+    public BasicIO()
+    {
+        System.out.println("BasicInputOutput() loaded");
+    }
+    
     public static void main(String[] args) {
        // Creates a scanner called in 
        Scanner in = new Scanner(System.in);

@@ -1,0 +1,52 @@
+package mainPackage;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class TextFiles
+{
+    
+    public TextFiles()
+    {
+        System.out.println("TextFiles() loaded");
+    }
+    
+    public static void getDoublesInFile() throws FileNotFoundException
+    {
+        System.out.println("getFile() works");
+        
+        
+
+        // Prompt for the input and output file names
+        
+        Scanner console = new Scanner(System.in);
+        System.out.print("Input file: ");
+        String inputFileName = console.next();
+        System.out.print("Output file: ");
+        String outputFileName = console.next();
+        
+        // Construct the scanner and PrintWriter objects for reading and writing
+        
+        File inputFile = new File(inputFileName);
+        Scanner in = new Scanner(inputFile);
+        PrintWriter out = new PrintWriter(outputFileName);
+        
+        // Reads the input and writes the output
+        
+        double total = 0;
+        
+        while(in.hasNextDouble())
+        {
+            double value = in.nextDouble();
+            out.printf("%15.2f\n", value);
+            total = total + value;
+        }
+        
+        out.printf("Total: %8.2f\n", total);
+        
+        in.close();
+        out.close();
+    }
+}

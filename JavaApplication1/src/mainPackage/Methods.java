@@ -1,3 +1,5 @@
+package mainPackage;
+
 // Import the scanner package
 import java.util.Scanner;
 
