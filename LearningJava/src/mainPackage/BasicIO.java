@@ -10,9 +10,9 @@ import java.util.Scanner;
 
 class BasicIO {
     
-    public BasicIO()
+    public void test()
     {
-        System.out.println("BasicInputOutput() loaded");
+        System.out.println("BasicIO loaded");
     }
     
     public static void main(String[] args) {

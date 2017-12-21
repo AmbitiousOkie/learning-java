@@ -20,9 +20,9 @@ public class Message
     // Message attribute
     String input;
     
-    public Message()
+    public void test()
     {
-        System.out.println("Message() loaded");
+        System.out.println("Message loaded");
     }
     
     
