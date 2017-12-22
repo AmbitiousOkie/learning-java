@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class LoadClasses {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         
         // Initialize the classes
         Message myMessage = new Message();
