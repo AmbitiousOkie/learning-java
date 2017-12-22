@@ -7,30 +7,30 @@ public class LoadClasses {
 
     public static void main(String[] args) throws IOException {
         
+        // Initialize the classes
         Message myMessage = new Message();
         BasicIO myIO = new BasicIO();
         GetSetCat gordon = new GetSetCat("Gordon",8);
+        TestErrors myErrors = new TestErrors();
+        ReadFile myFile = new ReadFile("/home/kris/learning-java/LearningJava/src/mainPackage/input.txt");
         
         // Test the classes in memory
-        myIO.test();
         myMessage.test();
+        myIO.test();
+        gordon.test();
+        myErrors.test();
+        myFile.test();
         System.out.println("Main loaded");
+        
+        // Run the classes
+        myFile.run();
+        myErrors.run();
+
+
 //        gordon.test();
         
         
-//        Read a file
-        String file_name = "/home/kris/learning-java/LearningJava/src/mainPackage/input.txt";
-        
-        try {
-            ReadFile file = new ReadFile(file_name);
-            String[] aryLines = file.OpenFile();
-            
-            file.processFile(aryLines);
-            
-        }
-        catch (IOException e) {
-            System.out.println( e.getMessage() );
-        }
+
         
  
     }

@@ -36,7 +36,7 @@ public class GetSetCat {
     }
     
     public void test(){
-        System.out.println("Cat: " + this.name + "\nWeight: " + weight);
+        System.out.println("GetSetCat loaded\n  Cat: " + this.name + "\n  Weight: " + weight);
     }
     
     
