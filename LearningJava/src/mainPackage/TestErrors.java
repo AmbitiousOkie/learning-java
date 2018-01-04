@@ -25,6 +25,9 @@ public class TestErrors {
         catch (IOException e) {
             System.out.println(e.getMessage());
         }
+        catch (NumberFormatException e) {
+            System.out.println("You think you're funny....!");
+        }
         finally {
             System.out.println("Got past the error!");
         }
@@ -38,6 +41,7 @@ public class TestErrors {
         System.out.println("What kind of error do you want?");
         System.out.println(" [0] Quit");
         System.out.println(" [1] IOException - Checked");
+        
         
         choice = in.next();
         int errorType = Integer.parseInt(choice);

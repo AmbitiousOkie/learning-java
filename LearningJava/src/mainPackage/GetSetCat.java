@@ -19,19 +19,19 @@ public class GetSetCat {
         this.setWeight(weight);
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
 
-    public double getWeight() {
+    private double getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    private void setWeight(double weight) {
         this.weight = weight;
     }
     
