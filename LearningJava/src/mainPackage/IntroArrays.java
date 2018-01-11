@@ -6,7 +6,7 @@
  */
 package mainPackage;
 
-import java.util.*;
+import java.util.ArrayList;
 /**
  *
  * @author kris
